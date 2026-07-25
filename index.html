@@ -47,7 +47,8 @@ nav a:hover{color:var(--tx)}
 .btn-s:hover{border-color:var(--acc);color:var(--acc)}
 .btn-sm{padding:11px 18px;font-size:14px}
 .hd .btn{margin-left:0}
-.burger{display:none;margin-left:auto;background:none;border:0;color:var(--tx);font-size:26px;cursor:pointer;line-height:1}
+.burger{display:none;background:none;border:0;color:var(--tx);font-size:26px;cursor:pointer;line-height:1;padding:0 2px}
+.hd-cta .short{display:none}
 
 /* hero */
 .hero{padding:76px 0 84px;border:0;position:relative;overflow:hidden}
@@ -87,6 +88,11 @@ nav a:hover{color:var(--tx)}
 .case h3{font-size:18px;margin-bottom:12px;color:var(--acc2)}
 .case p{font-size:15px;line-height:1.55;flex:1}
 .case .num{font-size:15px;color:var(--tx);font-weight:700;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+
+.cta-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:26px;padding:28px 32px;background:linear-gradient(120deg,rgba(224,165,66,.1),rgba(224,165,66,.03));border:1px solid rgba(224,165,66,.3);border-radius:var(--r)}
+.cta-strip b{display:block;font-size:19px;font-weight:700;margin-bottom:6px}
+.cta-strip span{color:var(--tx2);font-size:15.5px}
+.cta-strip .btn{flex:none}
 
 /* services */
 .svcs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -183,9 +189,16 @@ footer{padding:44px 0;border-top:1px solid var(--line);color:var(--tx3);font-siz
   nav.on{display:flex}
   nav a{padding:13px 0;border-bottom:1px solid var(--line)}
   .burger{display:block}
-  .hd .btn{display:none}
+  .hd{gap:12px}
+  nav{margin-left:0}
+  .hd-cta{margin-left:auto;padding:10px 15px;font-size:14px}
+  .hd-cta .full{display:none}
+  .hd-cta .short{display:inline}
+  .logo{font-size:17px}
   .pains,.cases,.svcs,.steps,.plans,.fit{grid-template-columns:1fr}
   .cta-row .btn{width:100%}
+  .cta-strip{flex-direction:column;text-align:center}
+  .cta-strip .btn{width:100%}
 }
 </style>
 </head>
@@ -201,7 +214,7 @@ footer{padding:44px 0;border-top:1px solid var(--line);color:var(--tx3);font-siz
    <a href="#rabota">Как работаю</a>
    <a href="#ceny">Цены</a>
   </nav>
-  <a href="#razbor" class="btn btn-p btn-sm">Бесплатный разбор</a>
+  <a href="#razbor" class="btn btn-p btn-sm hd-cta"><span class="full">Бесплатный разбор</span><span class="short">Разбор</span></a>
   <button class="burger" id="burger" aria-label="Меню">☰</button>
  </div>
 </header>
@@ -424,6 +437,14 @@ footer{padding:44px 0;border-top:1px solid var(--line);color:var(--tx3);font-siz
     <div class="num">Подключение нового поставщика перестало быть проектом на неделю</div>
    </div>
 
+  </div>
+
+  <div class="cta-strip">
+   <div>
+    <b>Хотите узнать, что найдётся у вас?</b>
+    <span>Проверю 31 пункт и пришлю список. Бесплатно, за 24 часа.</span>
+   </div>
+   <a href="#razbor" class="btn btn-p">Получить разбор</a>
   </div>
  </div>
 </section>
