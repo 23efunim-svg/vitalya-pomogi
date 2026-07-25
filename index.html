@@ -79,7 +79,8 @@ h1 .ln i{display:block;font-style:normal;transform:translateY(110%);transition:t
 html.no-js h1 .ln i{transform:none}
 h1 em{font-style:normal;color:var(--acc)}
 .hero-photo{width:clamp(120px,15vw,208px);flex:none;position:relative}
-.hero-photo img{width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:grayscale(1) contrast(1.06);transition:filter .5s}
+img{max-width:100%;height:auto;display:block}
+.hero-photo img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;filter:grayscale(1) contrast(1.06);transition:filter .5s}
 .hero-photo:hover img{filter:none}
 .hero-photo figcaption{font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.35}
 .hero-btm{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;margin-top:clamp(34px,4vw,58px);padding-top:clamp(28px,3vw,42px);border-top:1px solid var(--line);align-items:start}
