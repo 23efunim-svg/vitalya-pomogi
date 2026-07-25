@@ -92,7 +92,7 @@ img{max-width:100%;height:auto;display:block}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border-block:1px solid var(--line)}
 .stat{background:var(--paper);padding:clamp(24px,3vw,40px) clamp(18px,2vw,28px);transition:background .4s}
 .stat b{display:block;font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(30px,3.6vw,48px);letter-spacing:-.05em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
-.stat b span{color:var(--acc)}
+.stat b .suf{color:var(--acc)}
 .stat i{display:block;font-style:normal;font-size:14px;color:var(--muted);margin-top:12px;line-height:1.4}
 
 /* section head */
@@ -309,7 +309,7 @@ html.no-js .rv{opacity:1;transform:none}
  <div class="stat rv"><b data-to="14">0</b><i>лет в маркетинге и продажах: своё дело, Яндекс.Такси, Wildberries</i></div>
  <div class="stat rv" style="--i:1"><b data-to="4">0</b><i>компании веду сейчас: стройка, производство, оборудование, экскурсии</i></div>
  <div class="stat rv" style="--i:2"><b data-to="255">0</b><i>записей звонков разобрал в одном проекте, чтобы найти потерянных клиентов</i></div>
- <div class="stat rv" style="--i:3"><b data-to="900">0</b><span style="font-family:Unbounded;font-weight:800;font-size:clamp(30px,3.6vw,48px);letter-spacing:-.05em;color:var(--acc)">%</span><i>рост оборота магазина за три месяца — лучший результат на маркетплейсах</i></div>
+ <div class="stat rv" style="--i:3"><b><span data-to="900">0</span><span class="suf">%</span></b><i>рост оборота магазина за три месяца, лучший результат на маркетплейсах</i></div>
 </div>
 
 <section id="zadachi" class="pad">
